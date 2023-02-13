@@ -1,0 +1,23 @@
+#msg{
+    margin: $spacing-half $spacing;
+    animation: trans 2s;
+    animation-iteration-count: infinite;
+}
+
+.errorMsg{
+    @extend #msg;
+}
+
+.errorBox {
+    height: 50px;
+    margin: $spacing;
+}
+
+
+@keyframes trans {
+    0%   {color:red}
+    25%  {color:rgb(0, 255, 0) }
+    50%  {color:blue }
+    75%  {color:green }
+    100% {color:red }
+}
